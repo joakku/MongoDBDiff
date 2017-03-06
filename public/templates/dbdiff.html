@@ -1,0 +1,11 @@
+<div class="dbdiff" ng-if="dbdiffCtrl.showDbDiff">
+  <select kendo-combo-box k-data-source="dbdiffCtrl.dataSource" k-filter="'contains'" ng-model="dbdiffCtrl.data.origin"></select>
+  <select kendo-combo-box k-data-source="dbdiffCtrl.dataSource" k-filter="'contains'" ng-model="dbdiffCtrl.data.destination"></select>
+  <button type="button" name="button" ng-if="dbdiffCtrl.data.origin && dbdiffCtrl.data.destination" ng-click="dbdiffCtrl.getCollections()">Get collections!</button>
+  <div class="collectionNames">
+    <div class="" ng-repeat="name in dbdiffCtrl.collections">
+      <label>{{name}} <input type="checkbox"></label>
+    </div>
+  </div>
+  <textarea name="name" rows="12" cols="120" ng-model="dbdiffCtrl.diff"></textarea>
+</div>

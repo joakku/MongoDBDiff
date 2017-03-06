@@ -1,0 +1,14 @@
+{
+  "name": "MongoDBDiff",
+  "version": "0.0.1",
+  "description": "A basic tool for handle db differences over Mongodb",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.17.0",
+    "express": "",
+    "lodash": "^4.17.4",
+    "mongodb": "",
+    "nodemon": "^1.11.0"
+  }
+}
